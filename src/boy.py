@@ -8,6 +8,7 @@ load_dotenv()
 # bot token to use with discord
 TOKEN = os.getenv("DISCORD_TOKEN")
 
+
 class OwnerCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -63,11 +64,13 @@ class OwnerCog(commands.Cog):
         else:
             await ctx.send("**`SUCCESS`**")
 
+
 def from_directory(bot):
     for filename in os.listdir("./Project_bot/src/cogs"):
         if filename.endswith(".py"):
             bot.unload_extension(f"cogs.{filename[0:-3]}")
             bot.load_extension(f"cogs.{filename[0:-3]}")
+
 
 def get_prefix(bot, message):
     prefixes = ["$", "!", ">"]
@@ -78,7 +81,6 @@ def get_prefix(bot, message):
 
     # If we are in a guild, we allow for the user to mention us or use any of the prefixes in our list.
     return commands.when_mentioned_or(*prefixes)(bot, message)
-
 
 
 # Setting our prefix for users to interact with out bot
@@ -93,15 +95,18 @@ async def on_error(event, *args, **kwargs):
         else:
             raise
 
+
 # global error catch when a user tries to run a command that has missing values or that the bot doesn't know
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("I have no knowledge of that command.")
 
+
 @bot.event
 async def on_ready():
     print("Logged on as {0}!".format(bot.user))
+
 
 initial_extensions = [
     "cogs.messaging",
@@ -109,7 +114,10 @@ initial_extensions = [
 ]
 
 if __name__ == "__main__":
-    profanity.load_censor_words_from_file(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))+'/files/profanity_wordlist.txt')
+    profanity.load_censor_words_from_file(
+        os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+        + "/files/profanity_wordlist.txt"
+    )
     bot.add_cog(OwnerCog(bot))
     for extension in initial_extensions:
         bot.load_extension(extension)

@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from modules.profanity import testIfBad
 
+
 class MessageCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -35,15 +36,15 @@ class MessageCog(commands.Cog):
 
         check = testIfBad(message.content)
         print(check)
-        print(check['profanity']==True)
-        if check['profanity']==True:
+        print(check["profanity"] == True)
+        if check["profanity"] == True:
             # save to database and delete message
             await message.delete()
             # message to channel
             await message.channel.send(f'{message.author.mention} {check["message"]}')
 
             # send direct message to user
-            await message.author.send('Your message was profain and has been removed')
+            await message.author.send("Your message was profain and has been removed")
         else:
             await message.reply(f'{message.author.mention} {check["message"]}')
 
