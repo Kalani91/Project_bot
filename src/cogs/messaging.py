@@ -35,8 +35,7 @@ class MessageCog(commands.Cog):
                 await message.channel.send(response)
 
         check = testIfBad(message.content)
-        print(check)
-        print(check["profanity"] == True)
+
         if check["profanity"] == True:
             # save to database and delete message
             await message.delete()
