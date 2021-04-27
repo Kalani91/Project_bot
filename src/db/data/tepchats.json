@@ -1,0 +1,3706 @@
+{
+  "guild": {
+    "id": "822026201450545212",
+    "name": "Technology Enquiry Project",
+    "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+  },
+  "channel": {
+    "id": "822026201450545215",
+    "type": "GuildTextChat",
+    "category": "Text Channels",
+    "name": "general",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "messages": [
+    {
+      "id": "822032615493337098",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-18T09:04:08.161+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822042218490888204",
+      "type": "Default",
+      "timestamp": "2021-03-18T09:42:17.694+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822042220261015593",
+      "type": "Default",
+      "timestamp": "2021-03-18T09:42:18.116+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822313287008911416",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-19T03:39:25.465+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314074335346709",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:42:33.178+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hey thanks for setting it up",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314114453995560",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:42:42.743+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "All good",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314153288138762",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:42:52.002+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "looks like you set up a bot, how did it go? was it hard?",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314203846279178",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:43:04.056+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Setting up was not hard",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314250759569438",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:43:15.241+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The bot can just reply pong xD",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314268497281044",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:43:19.47+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "For now",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314337884045312",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:43:36.013+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I send over the tuts !",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314608294625320",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:44:40.484+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nice thanks",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822314907311144990",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:45:51.775+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i'm watching a youtube tute now, going to practice a bit",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315130539737108",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:46:44.997+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yeah",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315142230048769",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:46:47.784+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Still no clue",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315160269881344",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:46:52.085+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "How to do the checka",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315493616386089",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:48:11.561+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah the documentation looks so complicated \uD83D\uDE29",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315931735949352",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:49:56.017+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Lets set the requirements first",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315946080600094",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:49:59.437+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Btw",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315967010045972",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:04.427+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "1 bot can do everything",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822315994181009428",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:10.905+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "No need several bots",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316123818426379",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:41.813+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ohh thats great!",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316163790274580",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:51.343+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "We just need",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316168315666482",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:52.422+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "File",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316181545287680",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:50:55.576+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "And object",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316203993202738",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:51:00.928+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Like jason taught us",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316231746781195",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:51:07.545+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Then we can them from each functions",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822316332568674304",
+      "type": "Default",
+      "timestamp": "2021-03-19T03:51:31.583+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "That what i understand!",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "822601079653007400",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-19T22:43:00.578+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823034806903373864",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-21T03:26:29.213+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823165309959667712",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-21T12:05:03.566+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823165475805593630",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:05:43.107+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "brendon",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823165561303334913",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:06:03.491+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@Brendon",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "818741537575272488",
+          "name": "Brendon",
+          "discriminator": 7664,
+          "nickname": "Brendon",
+          "isBot": false
+        }
+      ]
+    },
+    {
+      "id": "823165584916086824",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:06:09.121+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Can you hear?",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823167489684013077",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:13:43.253+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hi",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168109086507008",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:16:10.93+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://replit.com/@Kalaninuwanga/kalani-bot#main.py",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "kalani bot",
+          "url": "https://replit.com/@Kalaninuwanga/kalani-bot",
+          "timestamp": null,
+          "description": "A Python repl by Kalaninuwanga",
+          "author": {
+            "name": "Kalaninuwanga",
+            "url": null
+          },
+          "thumbnail": {
+            "url": "https://www.gravatar.com/avatar/9d32c9b2779f987ca23579541d7c8103?d=https://repl.it/public/images/evalbot/evalbot_24.png&s=256",
+            "width": 795,
+            "height": 795
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168124894445630",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:16:14.699+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://pypi.org/project/better-profanity/",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "better-profanity",
+          "url": "https://pypi.org/project/better-profanity/",
+          "timestamp": null,
+          "description": "Blazingly fast cleaning swear words (and their leetspeak) in strings",
+          "thumbnail": {
+            "url": "https://pypi.org/static/images/twitter.90915068.jpg",
+            "width": 300,
+            "height": 300
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168173934903327",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:16:26.391+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "replit.com",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168288640335872",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:16:53.739+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168289764147230",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:16:54.007+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823168865704869918",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:19:11.322+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@Brendon",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "818741537575272488",
+          "name": "Brendon",
+          "discriminator": 7664,
+          "nickname": "Brendon",
+          "isBot": false
+        }
+      ]
+    },
+    {
+      "id": "823169899794268160",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:23:17.868+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/snguyenthanh/better_profanity/blob/master/better_profanity/profanity_wordlist.txt",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "snguyenthanh/better_profanity",
+          "url": "https://github.com/snguyenthanh/better_profanity/blob/master/better_profanity/profanity_wordlist.txt",
+          "timestamp": null,
+          "description": "Blazingly fast cleaning swear words (and their leetspeak) in strings - snguyenthanh/better_profanity",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://avatars.githubusercontent.com/u/35214933?s=400&v=4",
+            "width": 400,
+            "height": 400
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823173214334484530",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:36:28.116+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/ \nhttps://github.com/MayankGoel28/Summariser-Bot",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Automatic Text Summarization Using TextRank Algorithm",
+          "url": "https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/",
+          "timestamp": null,
+          "description": "Learn about Automatic Text Summarization, one of the most challenging problems in the field of Natural Language Processing (NLP) using TextRank algorithm.",
+          "author": {
+            "name": "Prateek Joshi",
+            "url": "https://www.analyticsvidhya.com/blog/author/pjoshi15/"
+          },
+          "thumbnail": {
+            "url": "https://cdn.analyticsvidhya.com/wp-content/uploads/2018/10/feat_image.jpg",
+            "width": 500,
+            "height": 370
+          },
+          "fields": []
+        },
+        {
+          "title": "MayankGoel28/Summariser-Bot",
+          "url": "https://github.com/MayankGoel28/Summariser-Bot",
+          "timestamp": null,
+          "description": "A bot that summaries conversations and records them for future use - MayankGoel28/Summariser-Bot",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://avatars.githubusercontent.com/u/28183768?s=400&v=4",
+            "width": 400,
+            "height": 400
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823177099614355476",
+      "type": "Reply",
+      "timestamp": "2021-03-21T12:51:54.439+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Testing a reply",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "308320587183554564",
+          "name": "Odav301",
+          "discriminator": 747,
+          "nickname": "Odav301",
+          "isBot": false
+        }
+      ],
+      "reference": {
+        "messageId": "823169088217808947",
+        "channelId": "822026201450545215",
+        "guildId": "822026201450545212"
+      }
+    },
+    {
+      "id": "823177348865196072",
+      "type": "Reply",
+      "timestamp": "2021-03-21T12:52:53.865+00:00",
+      "timestampEdited": "2021-03-21T12:54:29.943+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "!flag ******word",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "823169088217808947",
+        "channelId": "822026201450545215",
+        "guildId": "822026201450545212"
+      }
+    },
+    {
+      "id": "823177959837925416",
+      "type": "Default",
+      "timestamp": "2021-03-21T12:55:19.532+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "from better_profanity import profanity\n\nif __name__ == \"__main__\":\n    text = \"...sh1t...hello_cat_fuck,,,,123\"\n\n    censored_text = profanity.censor(text)\n    print(censored_text)\n    # \"...****...hello_cat_****,,,,123\"",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180241332994078",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:04:23.483+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180346212089887",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:04:48.488+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180347394490368",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:04:48.77+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180379846344735",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:04:56.507+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ready to play",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180400025272330",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:05:01.318+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "who is ready to play",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180415958908938",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:05:05.117+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "iam",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823180976946937927",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:07:18.867+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "who is on tonight",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181019032584213",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:07:28.901+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "link here",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181184107413506",
+      "type": "Reply",
+      "timestamp": "2021-03-21T13:08:08.258+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "THanks",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "308320587183554564",
+          "name": "Odav301",
+          "discriminator": 747,
+          "nickname": "Odav301",
+          "isBot": false
+        }
+      ],
+      "reference": {
+        "messageId": "823181019032584213",
+        "channelId": "822026201450545215",
+        "guildId": "822026201450545212"
+      }
+    },
+    {
+      "id": "823181233475026975",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:08:20.028+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i am here",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181440341770301",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:09:09.349+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i like c++",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181458406768650",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:09:13.656+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "me tooo i love c++",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181513624387644",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:09:26.821+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "me to",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823181538824552488",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:09:32.829+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it the best lanaguage",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182521939918848",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:13:27.222+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "822314364949626892",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182545826742293",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:13:32.917+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "822314364949626892",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182570073620560",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:13:38.698+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "823182386816614442",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182646870933555",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:13:57.008+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [
+        {
+          "id": "823182647127048252",
+          "url": "https://cdn.discordapp.com/attachments/822026201450545215/823182647127048252/unknown.png",
+          "fileName": "unknown.png",
+          "fileSizeBytes": 8195
+        }
+      ],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182938149486602",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:15:06.454+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ghfkl",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182983250051093",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:15:17.207+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823182984458010694",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:15:17.495+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183352151539712",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:16:45.16+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183353770541056",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:16:45.546+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183530041147473",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:27.572+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pingping",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183532482232360",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:28.154+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183534084587532",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:28.536+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183576047812630",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:38.541+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183577641910282",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:38.921+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183577755025408",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:38.948+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ping",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183578656800801",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:17:39.163+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pong",
+      "author": {
+        "id": "822026901479620608",
+        "name": "Disbot1",
+        "discriminator": "0405",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823183685091459122",
+      "type": "Reply",
+      "timestamp": "2021-03-21T13:18:04.539+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "this one",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "740139627389648918",
+          "name": "Kalani",
+          "discriminator": 2811,
+          "nickname": "Kalani",
+          "isBot": false
+        }
+      ],
+      "reference": {
+        "messageId": "823168109086507008",
+        "channelId": "822026201450545215",
+        "guildId": "822026201450545212"
+      }
+    },
+    {
+      "id": "823183747066364004",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:18:19.315+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://replit.com",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "The collaborative browser based IDE",
+          "url": "https://replit.com/",
+          "timestamp": null,
+          "description": "Replit is a simple yet powerful online IDE, Editor, Compiler, Interpreter, and REPL. Code, compile, run, and host in 50+ programming languages.",
+          "thumbnail": {
+            "url": "https://replit.com/public/images/sm.png",
+            "width": 1659,
+            "height": 1658
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823184398513733703",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-03-21T13:20:54.632+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "823184106191192094",
+        "name": "TEst2",
+        "discriminator": "2552",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823184748725403669",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:22:18.129+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ODIzMTg0MTA2MTkxMTkyMDk0.YFdH8A.JEpICeCJcYpClhbEW1xogocD--o",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823185269188460565",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:24:22.217+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "kalani",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823185269821407262",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:24:22.368+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hi Kalani How are you!",
+      "author": {
+        "id": "823184106191192094",
+        "name": "TEst2",
+        "discriminator": "2552",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823185778737152040",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:26:23.703+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "kalani",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823185779508641812",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:26:23.887+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hi Kalani How are you!",
+      "author": {
+        "id": "823184106191192094",
+        "name": "TEst2",
+        "discriminator": "2552",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823186318053474325",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:28:32.286+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://realpython.com/how-to-make-a-discord-bot-python/#interacting-with-discord-apis",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "How to Make a Discord Bot in Python – Real Python",
+          "url": "https://realpython.com/how-to-make-a-discord-bot-python/",
+          "timestamp": null,
+          "description": "In this step-by-step tutorial, you'll learn how to make a Discord bot in Python and interact with several APIs. You'll learn how to handle events, accept commands, validate and verify input, and all the basics that can help you create useful and exciting automations!",
+          "thumbnail": {
+            "url": "https://files.realpython.com/media/How-to-Make-a-Discord-Bot-With-Python_Watermarked.23887eee3226.jpg",
+            "width": 1920,
+            "height": 1080
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823187974937509908",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:35:07.318+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "----> welcome Brendon to TEP",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823190373102780417",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:44:39.085+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://splusweb.swin.edu.au/timetable2021/",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823191865724895253",
+      "type": "Default",
+      "timestamp": "2021-03-21T13:50:34.954+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://studentvip.com.au/swinburne/hawthorn/maps/118894",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "EN213 Classroom at Swinburne Hawthorn ...",
+          "url": "https://studentvip.com.au/swinburne/hawthorn/maps/118894",
+          "timestamp": null,
+          "description": "Classroom is to the left after exiting the elevator",
+          "thumbnail": {
+            "url": "https://cdn.studentvip.com.au/open-graph.png",
+            "width": 1024,
+            "height": 1024
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "823758448646422550",
+      "type": "Default",
+      "timestamp": "2021-03-23T03:21:58.849+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "kalani",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825641268578353153",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:03:38.102+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "talking to boss be in soon",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825641310034722816",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:03:47.986+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ok",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643278572716063",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:11:37.322+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hey kalani we're in voice chat",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643319933403146",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:11:47.183+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ohhh",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643343735422976",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:11:52.858+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "wait",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643484013920286",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:12:26.303+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i forgot how to get there",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643525747638292",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:12:36.253+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "click on general under voice channels",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825643885861928982",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:14:02.111+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://explosion.ai/demos/sense2vec",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "sense2vec: Semantic Analysis of the Reddit Hivemind · Explosion",
+          "url": "https://explosion.ai/demos/sense2vec",
+          "timestamp": null,
+          "description": "We parsed every comment posted Reddit in 2015 and 2019, and trained different word2vec models for each year.",
+          "thumbnail": {
+            "url": "https://explosion-demos.netlify.app/assets/img/preview.jpg",
+            "width": 1500,
+            "height": 1000
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825645496889901066",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:20:26.21+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://dash-gallery.plotly.host/Portal/",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Dash Enterprise",
+          "url": "https://dash-gallery.plotly.host/Portal/",
+          "timestamp": null,
+          "description": "Dash Enterprise",
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825646141848551445",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:22:59.98+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://azure.microsoft.com/en-au/free/students/",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Azure for Students – Free account credit | Microsoft Azure",
+          "url": "https://azure.microsoft.com/en-au/free/students/",
+          "timestamp": null,
+          "description": "With Microsoft Azure for Students, get a $100 credit when you create your free account. There is no credit card needed and 12 months of free Azure services.",
+          "thumbnail": {
+            "url": "https://azurecomcdn.azureedge.net/cvt-207204c4a3ff2a61cec1109f3a17aca5796e73a99daf928050ba049d094b1010/images/shared/social/azure-icon-250x250.png",
+            "width": 250,
+            "height": 250
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825646186567434250",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:23:10.642+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://azure.microsoft.com/en-au/free/students/",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Azure for Students – Free account credit | Microsoft Azure",
+          "url": "https://azure.microsoft.com/en-au/free/students/",
+          "timestamp": null,
+          "description": "With Microsoft Azure for Students, get a $100 credit when you create your free account. There is no credit card needed and 12 months of free Azure services.",
+          "thumbnail": {
+            "url": "https://azurecomcdn.azureedge.net/cvt-207204c4a3ff2a61cec1109f3a17aca5796e73a99daf928050ba049d094b1010/images/shared/social/azure-icon-250x250.png",
+            "width": 250,
+            "height": 250
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825646826417029120",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:25:43.194+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://plotly.com/python/",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Plotly Python Graphing Library",
+          "url": "https://plotly.com/python/",
+          "timestamp": null,
+          "description": "Plotly's Python graphing library makes interactive, publication-quality graphs. Examples of how to make line plots, scatter plots, area charts, bar charts, error bars, box plots, histograms, heatmaps, subplots, multiple-axes, polar charts, and bubble charts.",
+          "thumbnail": {
+            "url": "https://help.plot.ly/images/twitter-default.png",
+            "width": 364,
+            "height": 365
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825649760022560809",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:37:22.62+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "gantt?",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825649785037783100",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:37:28.584+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yes",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "825649821360062494",
+      "type": "Default",
+      "timestamp": "2021-03-28T08:37:37.244+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Gantt charts",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830728898558951474",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:00:03.613+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730428083863603",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:06:08.28+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hi guys",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730576243589121",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:06:43.604+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hello",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730620430188584",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:06:54.139+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "let's give it 5 more mins?",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730646754164757",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:07:00.415+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730855117881374",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:07:50.093+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "How was everyones weekend",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730859027365938",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:07:51.025+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "??",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730897304322069",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:00.151+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "assignment",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730908914548776",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:02.919+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "never ends",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730956426969089",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:14.247+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "very unproductive",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730957102383184",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:14.408+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "same",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830730985934290975",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:21.282+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://tenor.com/view/fuck-this-shit-im-out-out-of-here-leaving-annoyed-gif-16132712",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "https://tenor.com/view/fuck-this-shit-im-out-out-of-here-leaving-annoyed-gif-16132712",
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "https://media.tenor.co/images/49db309e10aea1ac671251e095bd3580/tenor.png",
+            "width": 640,
+            "height": 354
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731027684392962",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:31.236+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE01",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731055471394817",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:37.861+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "needed a break from assignments so i did nothing \uD83D\uDE06",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731082181771285",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:08:44.229+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "apart from that I slip and fell on the stair case",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731166624907274",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:04.362+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "oh no \uD83D\uDE26",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731190394683411",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:10.029+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nothing serious i hope",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731236363337729",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:20.989+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nah",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731277748666409",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:30.856+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Just hurting my back a little bit",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731293078585344",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:34.511+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "was planning to do an assignment, but have a cold....",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731336586756146",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:44.884+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ikr",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731362012758046",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:50.946+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "the weather is pretty shit",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731367268352020",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:52.199+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Most hurtful part was the embarrasment \uD83D\uDE01",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731397554634822",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:09:59.42+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah i have 5 assignments due in the next two weeks but no motivation",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731433903259660",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:10:08.086+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "same",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731615729877032",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:10:51.437+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lets do this quick",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731621463490580",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:10:52.804+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pls",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731659808342056",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:11:01.946+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "looks like brendon is busy",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731673514803250",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:11:05.214+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah waiting for brendon",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731701176107009",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:11:11.809+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lets wait",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731702741368862",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:11:12.182+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "should we call him and see?",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731863177035796",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:11:50.433+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/Kalani91/Project_bot",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Kalani91/Project_bot",
+          "url": "https://github.com/Kalani91/Project_bot",
+          "timestamp": null,
+          "description": "Contribute to Kalani91/Project_bot development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://avatars.githubusercontent.com/u/82311518?s=400&v=4",
+            "width": 420,
+            "height": 420
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731914792140831",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:12:02.739+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Can you guys see if you can access this",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731945793159208",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:12:10.13+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah i can access it",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830731975873921024",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:12:17.302+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nice",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732013274791948",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:12:26.219+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "you can add files too right?",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732158233739265",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:00.78+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i think you need to give us access",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732193344913429",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:09.151+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "oh",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732235131846676",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:19.114+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "have no idea how to do that. But let me figure out",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732264731443220",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:26.171+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "do you have a way to request access",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732265830088704",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:26.433+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or we can fork it can send pull request to you",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732333543194634",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:13:42.577+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah do that",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732491228577872",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:14:20.172+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "shall we start?",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732570231832586",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:14:39.008+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yes pls",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732582651035658",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:14:41.969+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yes",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732603996372992",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:14:47.058+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ok lets go to voice chat guys",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732641874477056",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:14:56.089+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yes",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830732933748359168",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:16:05.677+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://docs.google.com/document/d/1j73uDzQCwnZ1pbS1EDj3pzp7FftfAFi8Mr2aa-3RvA8/edit",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Agenda Week 6",
+          "url": "https://docs.google.com/document/d/1j73uDzQCwnZ1pbS1EDj3pzp7FftfAFi8Mr2aa-3RvA8/edit",
+          "timestamp": null,
+          "description": "Meeting Agenda   Date: 13/04/2021 \tDay : Tuesday  1.0 Attendees: Kalani  Meznah\t Brendon Chuan David  2.0 Previous Meeting Minutes:   3.0 Completed Individual Reports for everyone's reference:   Kalani  Meznah  Brendon  Chuan  David    4.0 Deliverable 2- Team Enquiry concept disc...",
+          "thumbnail": {
+            "url": "https://lh4.googleusercontent.com/MvXDUbL8wLiQ5-TWuPIbSCIzffxiDKcmsjZcIuUJdNPAX0sFg1zNg7fjZqrYRD6HlOHmBQiHFibtBw=w1200-h630-p",
+            "width": 1200,
+            "height": 630
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830734223727132673",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:21:13.232+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://streamlit.io/",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Streamlit • The fastest way to build and share data apps",
+          "url": "https://streamlit.io/",
+          "timestamp": null,
+          "description": "Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful data apps in hours, not weeks. All in pure Python. All for free.",
+          "color": "#FFFFFF",
+          "thumbnail": {
+            "url": "https://streamlit.io/sharing-image-facebook.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735068993290290",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:24:34.759+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://spacy.io/",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "spaCy · Industrial-strength Natural Language Processing in Python",
+          "url": "https://spacy.io/",
+          "timestamp": null,
+          "description": "spaCy is a free open-source library for Natural Language Processing in Python. It features NER, POS tagging, dependency parsing, word vectors and more.",
+          "color": "#09A3D5",
+          "thumbnail": {
+            "url": "https://spacy.io/static/social_default-1d3b50b1eba4c2b06244425ff0c49570.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735534669299733",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:26:25.785+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cant here me",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735541468266497",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:26:27.406+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "?",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735558787072060",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:26:31.535+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nope",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735570408833046",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:26:34.306+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nope",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735637028143106",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:26:50.189+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "give me a second ill reconnect",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830735761225285713",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:27:19.8+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://share.streamlit.io/kun97/fifa20_dataanalysis/main/web_app.py",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830736052414578749",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:28:29.225+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://streamlit.io/",
+      "author": {
+        "id": "734966382936195179",
+        "name": "pinaya",
+        "discriminator": "2876",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Streamlit • The fastest way to build and share data apps",
+          "url": "https://streamlit.io/",
+          "timestamp": null,
+          "description": "Streamlit is an open-source app framework for Machine Learning and Data Science teams. Create beautiful data apps in hours, not weeks. All in pure Python. All for free.",
+          "color": "#FFFFFF",
+          "thumbnail": {
+            "url": "https://streamlit.io/sharing-image-facebook.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830739143402717187",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:40:46.174+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://www.acm.org/publications/authors/reference-formatting",
+      "author": {
+        "id": "807513520240721930",
+        "name": "Chuan",
+        "discriminator": "4601",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Citation Style and Reference Formats",
+          "url": "https://www.acm.org/publications/authors/reference-formatting",
+          "timestamp": null,
+          "description": "Describes ACM in-text citation style and provides examples of various reference formats",
+          "thumbnail": {
+            "url": "https://www.acm.org/images/acm_rgb_grad_pos_diamond.png",
+            "width": 417,
+            "height": 417
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830739525528846356",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:42:17.28+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://en.wikipedia.org/wiki/Website_wireframe",
+      "author": {
+        "id": "818741537575272488",
+        "name": "Brendon",
+        "discriminator": "7664",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/4.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Website wireframe",
+          "url": "https://en.wikipedia.org/wiki/Website_wireframe",
+          "timestamp": null,
+          "description": "A website wireframe, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website. Wireframes are created for the purpose of arranging elements to best accomplish a particular purpose. This discipline is created by L. te Pas. A former student from Harvard (1982).\nThe purpose is usually...",
+          "thumbnail": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Profilewireframe.png",
+            "width": 611,
+            "height": 680
+          },
+          "fields": []
+        }
+      ],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "830739884301746196",
+      "type": "Default",
+      "timestamp": "2021-04-11T09:43:42.818+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "308320587183554564",
+        "name": "Odav301",
+        "discriminator": "0747",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [
+        {
+          "id": "830739884171984906",
+          "url": "https://cdn.discordapp.com/attachments/822026201450545215/830739884171984906/UML_class_diagram_final.png",
+          "fileName": "UML_class_diagram_final.png",
+          "fileSizeBytes": 33915
+        }
+      ],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "831433524330102804",
+      "type": "GuildMemberJoin",
+      "timestamp": "2021-04-13T07:39:59.488+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Joined the server.",
+      "author": {
+        "id": "828789141725642822",
+        "name": "IrcChatterBot",
+        "discriminator": "2872",
+        "isBot": true,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "831433709437190154",
+      "type": "Default",
+      "timestamp": "2021-04-13T07:40:43.621+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hi bot \uD83D\uDE01",
+      "author": {
+        "id": "740139627389648918",
+        "name": "Kalani",
+        "discriminator": "2811",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/740139627389648918/fe3b5570be393cc63cdfd57257838998.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "\uD83D\uDC7B",
+            "isAnimated": false,
+            "imageUrl": "https://twemoji.maxcdn.com/2/72x72/1f47b.png"
+          },
+          "count": 1
+        }
+      ],
+      "mentions": []
+    }
+  ],
+  "messageCount": 166
+}
