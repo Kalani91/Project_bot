@@ -2,7 +2,6 @@ from better_profanity import profanity
 
 
 def testIfBad(message):
-    print(message)
     isProfain = profanity.contains_profanity(message)
     if isProfain:
         return {
