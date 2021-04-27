@@ -2,7 +2,7 @@
 #
 # Author: Chuan He
 # Created on 30/03/2021
-# Last edit: 26/04/2021
+# Last edit: 27/04/2021
 
 from db_conf import server
 from data import table_desc
@@ -51,13 +51,11 @@ class Db_helper:
     def __create_cursor(self):
         if self.__cnx:   
             self.__cursor = self.__cnx.cursor(buffered=True)
-            print("Cursor open successful")
     
     # close a cursor object
     def __close_cursor(self):
         if self.__cursor:
             self.__cursor.close()
-            print("Cursor close successful")
 
     # method to create tables in database
         # open cursor
@@ -134,31 +132,3 @@ class Db_helper:
 
 # initialise an instance of Db_helper with mysql server config
 db_instance = Db_helper(server["user"], server["password"], server["host"], server["port"], server["database"])
-
-
-# the below part is for test and dev purposels
-if __name__ == "__main__":
-    # test database connection
-    db_instance.connect()
-    
-    # test insert method
-    sql = ("insert into pet " "(name, owner, species, sex, birth, death) " "values (%(name)s, %(owner)s, %(species)s, %(sex)s, %(birth)s, %(death)s)")
-
-    data = {
-        "name": "Alice",
-        "owner": "Dan",
-        "species": "Long hair",
-        "sex": "m",
-        "birth": "1999-10-10",
-        "death": "null"
-    }
-    rs = db_instance.insert(sql,data)
-    print(rs)
-
-    # test select query
-    sql = "select * from pet"
-    rs = db_instance.select(sql, size=1)
-    print(rs)
-
-    # test database close
-    db_instance.close()
