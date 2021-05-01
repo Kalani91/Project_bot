@@ -7,8 +7,8 @@
 # only run this script when you want to create table with test data on AWS
 
 import json
-from connector import db_instance
-from tables import discord_channel, violated_message, clean_message, flagged_message
+from db.connector import db_instance
+from db.tables import discord_channel, violated_message, clean_message, flagged_message
 
 # Size x 3 is the numbers of record you want to insert to each message table
 def init_tables(size):

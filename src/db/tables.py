@@ -4,7 +4,7 @@
 # Created on 16/04/2021
 # Last edit: 27/04/2021
 
-from connector import db_instance
+from db.connector import db_instance
 
 # Channel object contains all the data manipulation methods realted to discrod_channel table
 class Discord_channel:
