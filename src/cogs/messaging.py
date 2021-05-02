@@ -1,12 +1,19 @@
 import discord
 from discord.ext import commands
-from modules.profanity import testIfBad
+from better_profanity import profanity
+from db.connector import db_instance
+from db.tables import discord_channel, violated_message, clean_message, flagged_message
+
+violation_limit = 3
+ban_limit = 3
 
 
 class MessageCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.dict = {}
+        db_instance.connect()
+        self.channel_list = discord_channel.select()
+        db_instance.close()
 
     # sends a direct message to user that joins the server
     @commands.Cog.listener()
@@ -28,24 +35,91 @@ class MessageCog(commands.Cog):
                 message
             )
         )
-        # checks if a user is saying hello to the bot and returns the favour
-        if "hello" in message.content.lower():
-            if self.bot.user.mentioned_in(message):
-                response = "Hello to you too {0.author.mention}".format(message)
-                await message.channel.send(response)
 
-        check = testIfBad(message.content)
+        if message.channel.id == message.author.dm_channel.id:  # dm
+            pass
+        elif not message.guild:  # group dm
+            pass
+        else:  # guild
+            check = profanityCheck(message.content)
 
-        if check["profanity"] == True:
-            # save to database and delete message
-            await message.delete()
-            # message to channel
-            await message.channel.send(f'{message.author.mention} {check["message"]}')
+            db_instance.connect()
 
-            # send direct message to user
-            await message.author.send("Your message was profain and has been removed")
-        else:
-            await message.reply(f'{message.author.mention} {check["message"]}')
+            if (message.channel.id, message.channel.name) not in self.channel_list:
+                self.channel_list.append((message.channel.id, message.channel.name))
+                discord_channel.insert(
+                    message.channel.id,
+                    message.channel.name,
+                )
+
+            if check["profanity"] == True:
+                # save to database and delete message
+                await message.delete()
+                # message to channel
+                await message.channel.send(
+                    f'{message.author.mention} {check["message"]}'
+                )
+
+                violated_message.insert(
+                    message.id,
+                    message.author.id,
+                    message.author.name,
+                    message.channel.id,
+                    message.content,
+                    message.content,
+                    message.created_at,
+                )
+
+                userCount = violated_message.count_numbers_of_violation(
+                    message.author.id
+                )
+
+                # check if user has reached limit on violations
+                if userCount % violation_limit == 0:
+                    # check if user has reached threshold for total violations
+                    if userCount / violation_limit >= ban_limit:
+                        # ban user from server
+                        message.author.ban(
+                            reason="You have exceeded the maximum allowed violations and have been banned.",
+                            delete_message_days=7,
+                        )
+                    else:
+                        # kick/mute user
+                        message.author.kick(
+                            reason="You have sent to many violations and have been kicked."
+                        )
+                else:
+                    # send direct message to user
+                    await message.author.send(
+                        "Your message was profain and has been removed"
+                    )
+
+            else:
+                clean_message.insert(
+                    message.id,
+                    message.author.id,
+                    message.author.name,
+                    message.channel.id,
+                    message.content,
+                    message.created_at,
+                )
+
+            db_instance.close()
+
+
+# checking message for profanity
+def profanityCheck(message):
+    isProfain = profanity.contains_profanity(message)
+    if isProfain:
+        return {
+            "profanity": isProfain,
+            "message": "This contains bad words.",
+        }
+    else:
+        return {
+            "profanity": isProfain,
+            "message": "This does not contain bad words.",
+        }
 
 
 def setup(bot):

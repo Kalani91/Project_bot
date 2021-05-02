@@ -4,8 +4,8 @@
 # Created on 30/03/2021
 # Last edit: 27/04/2021
 
-from db_conf import server
-from data import table_desc
+from db.db_conf import server
+from db.data import table_desc
 import mysql.connector
 from mysql.connector import errorcode
 
