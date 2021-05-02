@@ -39,6 +39,14 @@ class Db_helper:
                 print(err.msg)
         else:
             print("Database connection successful")
+            return True
+            
+    # method to return connection object
+    def get_connect(self):
+        if (self.__cnx):
+            return self.__cnx
+        else:
+            return None
 
     # close database connection
     def close(self):
