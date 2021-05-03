@@ -36,7 +36,7 @@ class MessageCog(commands.Cog):
             )
         )
 
-        if message.channel.id == message.author.dm_channel.id:  # dm
+        if isinstance(message.channel,discord.channel.DMChannel):  # dm
             pass
         elif not message.guild:  # group dm
             pass
