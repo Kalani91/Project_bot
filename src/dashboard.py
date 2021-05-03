@@ -47,7 +47,7 @@ def make_wordcloud(df):
     text = " ". join(word for word in df['message_content'].astype(str)) 
     wc_caption = 'Wordcloud built from analysis of  '+ str(len(text)) + ' words. The size of the word indicates the frequency - so the larger the word, the more frequently it occurs in the data.'
 
-    wordcloud = WordCloud(stopwords=stop_words, background_color="white", width=800, height=600).generate(text)
+    wordcloud = WordCloud(stopwords=stop_words, collocations=False, background_color="white", width=800, height=600).generate(text)
 
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")

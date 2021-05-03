@@ -20,7 +20,7 @@ already also although always am among amongst amount an and another any anyhow
 anyone anything anyway anywhere are around as at au
 back be became because become becomes becoming been before beforehand behind
 being below beside besides between beyond both bottom but by
-call can cannot ca could com can't
+call can cannot ca could com can't couldn't wouldn't
 did do does doing done down due during don't
 each eight either eleven else elsewhere empty enough even ever every
 everyone everything everywhere except en
@@ -29,8 +29,8 @@ further
 get give go
 had has have he hence her here hereafter hereby herein hereupon hers herself
 him himself his how however hundred hello hey hi
-i if in indeed into is it its itself im i'm it's io isn't i've
-keep know
+i if in indeed into is it its itself im i'm it's io isn't i've i'll use
+keep know look looks want wants think thinks right lol xd going nice haha hahaha thing ohh oh
 last latter latterly least less let like lets
 just joined
 made make many may me meanwhile might mine more moreover most mostly move much
