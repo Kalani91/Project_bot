@@ -1,6 +1,7 @@
 # Project_bot
 
-## How to Colaborate
+
+## 1. How to Collaborate
 
 ### Cloning the repo to local machine
 
@@ -30,19 +31,20 @@ All done with setup.
 
 Most IDE's come with source control management inbuilt which should automatically detect version control being used in project directory, makes creating branches, commiting, pushing, and pulling simpler with GUI and buttons.
 
-## Installing Packages
+## 2. Installing Packages
 
 ```shell
 python3 -m pip install -r requirements.txt
 ```
 
-## Data Visualization Instructions
-
-### 1. Deploying bot
+## 3. Deploying bot
 
 To be written
 
-### 2. Deploying dashboard
+
+## 4. Data Visualization Instructions
+
+### Deploying dashboard
 
 #### Dashboard dependencies
 
@@ -79,7 +81,7 @@ Must use command line.
 2. Navigate to src folder and execute the following command: `streamlit run dashboard.py`
 3. There may be errors relating to the nlp_summary.py if you're unable to install the Spacy dependencies mentioned above. If so, comment out lines 11, 172, and 174. The rest of the dashboard should show up as normal.
 
-## Database module
+## 5. Database module
 
 ### Installing MySQL Connector/Python
 
