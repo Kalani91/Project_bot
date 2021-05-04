@@ -72,7 +72,7 @@ class MessageCog(commands.Cog):
 
                 userCount = violated_message.count_numbers_of_violation(
                     message.author.id
-                )
+                )[0][0]
 
                 # check if user has reached limit on violations
                 if userCount % violation_limit == 0:
