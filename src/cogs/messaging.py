@@ -75,25 +75,39 @@ class MessageCog(commands.Cog):
                 )[0][0]
 
                 # check if user has reached limit on violations
-                if userCount % violation_limit == 0:
-                    # check if user has reached threshold for total violations
-                    if userCount / violation_limit >= ban_limit:
-                        # ban user from server
-                        message.author.ban(
-                            reason="You have exceeded the maximum allowed violations and have been banned.",
-                            delete_message_days=7,
+                if message.author.guild_permissions.administrator == False:
+                    if userCount % violation_limit == 0:
+                        # check if user has reached threshold for total violations
+                        if userCount / violation_limit >= ban_limit:
+                            # ban user from server
+                            await message.author.send(
+                                f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
+                            )
+                            await message.author.ban(
+                                reason="Exceeded the maximum allowed violations in account.",
+                                delete_message_days=7,
+                            )
+                        else:
+                            # kick/mute user
+                            await message.author.kick(
+                                reason="Had to many violations and have been kicked."
+                            )
+                            await message.author.send("You have been kicked")
+                    elif userCount % violation_limit == violation_limit - 1:
+                        # warn user that they're on their final warning before being kicked
+                        await message.author.send(
+                            "If you ignore the server rules and continue to post messages that are deemed to violate our terms of use you will be kicked from the server."
                         )
                     else:
-                        # kick/mute user
-                        message.author.kick(
-                            reason="You have sent to many violations and have been kicked."
+                        # send direct message to user
+                        await message.author.send(
+                            "Your message violates our terms of use and has been removed"
                         )
                 else:
-                    # send direct message to user
+                    # admin violation
                     await message.author.send(
-                        "Your message was profain and has been removed"
+                        f"Your message violates our terms of use and has been removed,\nAs you are an administrator in {message.guild.name} your account bypasses the violation checks.\n\nTotal violations: {userCount}"
                     )
-
             else:
                 clean_message.insert(
                     message.id,
