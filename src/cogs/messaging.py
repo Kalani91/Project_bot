@@ -1,3 +1,4 @@
+from datetime import datetime
 import discord
 from discord.ext import commands
 from better_profanity import profanity
@@ -18,10 +19,40 @@ class MessageCog(commands.Cog):
     # sends a direct message to user that joins the server
     @commands.Cog.listener()
     async def on_member_join(self, member):
-        await member.create_dm()
-        await member.dm_channel.send(
-            f"Hi {member.name}, welcome to our discord server!"
+        embed = discord.Embed(
+            color=0x4A3D9A,
+            title=f"Welcome to {member.guild.name}, {member.name}",
+            description=f"By joining this server you agree to abide by the rules of the chat:",
         )
+        embed.add_field(
+            name="Be Concise and Brief",
+            value="Keep messages brief, concise, and to the point. You can discuss anything unrelated afterwards.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Avoid Caps Lock",
+            value="Stick to sentence case. In the age of internet messaging, capitalized sentences are considered written shouting and sometimes irritating. Users  may think you’re rude, commanding, or angry at them.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Be Patient Waiting for Feedback",
+            value="Give people time to respond to your messages. Some users are slow typists, while others may be busy. You might not receive immediate feedback depending on the complexity of the issue at hand, either. Therefore, be patient and wait for the response instead of bombarding users with messages to get their attention.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Don’t do Illegal Things",
+            value="Streams, scamming people, harassing other users that kind of thing are not allowed",
+            inline=False,
+        )
+        embed.add_field(
+            name="No NSFW content",
+            value="This is a public chat board, and as such there will be no content deemed to be not safe for work.",
+            inline=False,
+        )
+        embed.set_footer(
+            text=f"You joined the server on {datetime.now().strftime('%A, %d of %B, %Y at %H:%M:%S')}"
+        )
+        await member.send(embed=embed)
 
     # on message event run anytime someone posts a message to a channel
     @commands.Cog.listener()
@@ -36,7 +67,7 @@ class MessageCog(commands.Cog):
             )
         )
 
-        if isinstance(message.channel,discord.channel.DMChannel):  # dm
+        if isinstance(message.channel, discord.DMChannel):  # dm
             pass
         elif not message.guild:  # group dm
             pass
