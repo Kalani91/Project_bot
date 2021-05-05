@@ -1,3 +1,4 @@
+from datetime import datetime
 import discord
 from discord.ext import commands
 from better_profanity import profanity
@@ -18,10 +19,40 @@ class MessageCog(commands.Cog):
     # sends a direct message to user that joins the server
     @commands.Cog.listener()
     async def on_member_join(self, member):
-        await member.create_dm()
-        await member.dm_channel.send(
-            f"Hi {member.name}, welcome to our discord server!"
+        embed = discord.Embed(
+            color=0x4A3D9A,
+            title=f"Welcome to {member.guild.name}, {member.name}",
+            description=f"By joining this server you agree to abide by the rules of the chat:",
         )
+        embed.add_field(
+            name="Be Concise and Brief",
+            value="Keep messages brief, concise, and to the point. You can discuss anything unrelated afterwards.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Avoid Caps Lock",
+            value="Stick to sentence case. In the age of internet messaging, capitalized sentences are considered written shouting and sometimes irritating. Users  may think you’re rude, commanding, or angry at them.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Be Patient Waiting for Feedback",
+            value="Give people time to respond to your messages. Some users are slow typists, while others may be busy. You might not receive immediate feedback depending on the complexity of the issue at hand, either. Therefore, be patient and wait for the response instead of bombarding users with messages to get their attention.",
+            inline=False,
+        )
+        embed.add_field(
+            name="Don’t do Illegal Things",
+            value="Streams, scamming people, harassing other users that kind of thing are not allowed",
+            inline=False,
+        )
+        embed.add_field(
+            name="No NSFW content",
+            value="This is a public chat board, and as such there will be no content deemed to be not safe for work.",
+            inline=False,
+        )
+        embed.set_footer(
+            text=f"You joined the server on {datetime.now().strftime('%A, %d of %B, %Y at %H:%M:%S')}"
+        )
+        await member.send(embed=embed)
 
     # on message event run anytime someone posts a message to a channel
     @commands.Cog.listener()
@@ -36,7 +67,7 @@ class MessageCog(commands.Cog):
             )
         )
 
-        if isinstance(message.channel,discord.channel.DMChannel):  # dm
+        if isinstance(message.channel, discord.DMChannel):  # dm
             pass
         elif not message.guild:  # group dm
             pass
@@ -72,28 +103,42 @@ class MessageCog(commands.Cog):
 
                 userCount = violated_message.count_numbers_of_violation(
                     message.author.id
-                )
+                )[0][0]
 
                 # check if user has reached limit on violations
-                if userCount % violation_limit == 0:
-                    # check if user has reached threshold for total violations
-                    if userCount / violation_limit >= ban_limit:
-                        # ban user from server
-                        message.author.ban(
-                            reason="You have exceeded the maximum allowed violations and have been banned.",
-                            delete_message_days=7,
+                if message.author.guild_permissions.administrator == False:
+                    if userCount % violation_limit == 0:
+                        # check if user has reached threshold for total violations
+                        if userCount / violation_limit >= ban_limit:
+                            # ban user from server
+                            await message.author.send(
+                                f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
+                            )
+                            await message.author.ban(
+                                reason="Exceeded the maximum allowed violations in account.",
+                                delete_message_days=7,
+                            )
+                        else:
+                            # kick/mute user
+                            await message.author.kick(
+                                reason="Had to many violations and have been kicked."
+                            )
+                            await message.author.send("You have been kicked")
+                    elif userCount % violation_limit == violation_limit - 1:
+                        # warn user that they're on their final warning before being kicked
+                        await message.author.send(
+                            "If you ignore the server rules and continue to post messages that are deemed to violate our terms of use you will be kicked from the server."
                         )
                     else:
-                        # kick/mute user
-                        message.author.kick(
-                            reason="You have sent to many violations and have been kicked."
+                        # send direct message to user
+                        await message.author.send(
+                            "Your message violates our terms of use and has been removed"
                         )
                 else:
-                    # send direct message to user
+                    # admin violation
                     await message.author.send(
-                        "Your message was profain and has been removed"
+                        f"Your message violates our terms of use and has been removed,\nAs you are an administrator in {message.guild.name} your account bypasses the violation checks.\n\nTotal violations: {userCount}"
                     )
-
             else:
                 clean_message.insert(
                     message.id,
