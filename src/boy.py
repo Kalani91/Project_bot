@@ -3,6 +3,7 @@ import discord
 from discord.ext import tasks, commands
 from dotenv import load_dotenv
 from better_profanity import profanity
+import utils.logger
 
 load_dotenv()
 # bot token to use with discord
@@ -114,6 +115,7 @@ initial_extensions = [
 ]
 
 if __name__ == "__main__":
+    utils.logger.setup_logging()
     profanity.load_censor_words_from_file(
         os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
         + "/files/profanity_wordlist.txt"

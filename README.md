@@ -1,6 +1,6 @@
 # Project_bot
 
-## How to Colaborate
+## 1. How to Collaborate
 
 ### Cloning the repo to local machine
 
@@ -30,19 +30,19 @@ All done with setup.
 
 Most IDE's come with source control management inbuilt which should automatically detect version control being used in project directory, makes creating branches, commiting, pushing, and pulling simpler with GUI and buttons.
 
-## Installing Packages
+## 2. Installing Packages
 
 ```shell
 python3 -m pip install -r requirements.txt
 ```
 
-## Data Visualization Instructions
-
-### 1. Deploying bot
+## 3. Deploying bot
 
 To be written
 
-### 2. Deploying dashboard
+## 4. Data Visualization Instructions
+
+### Deploying dashboard
 
 #### Dashboard dependencies
 
@@ -79,7 +79,7 @@ Must use command line.
 2. Navigate to src folder and execute the following command: `streamlit run dashboard.py`
 3. There may be errors relating to the nlp_summary.py if you're unable to install the Spacy dependencies mentioned above. If so, comment out lines 11, 172, and 174. The rest of the dashboard should show up as normal.
 
-## Database module
+## 5. Database module
 
 ### Installing MySQL Connector/Python
 
@@ -133,4 +133,61 @@ violated_message.count_numbers_of_violation(user_id)
 
 # close database connection
 db_instance.close()
+```
+
+## 6. Logging
+
+### Installing PyYAML
+
+PyYAML is available on PyPI:
+
+```console
+$ pip install PyYAML
+```
+
+### Logging level
+
+This logging module has defined three different levels of logging.
+
+- INFO: can be used for general information purpose, such as confirmation information
+- DEBUG: can be used for debugging purpose, such as critical variable during a loop
+- ERROR: can be used for critical error
+
+INFO level output will be displayed in the terminal and stored in src/logs/debug.log.
+
+DEBUG level output will be stored in src/logs/debug.log.
+
+ERROR level output will be stored in src/logs/error.log.
+
+At development stage, all three levels of logging are enabled. Once our app went to production version, only ERROR level will be enabled. So please make sure to use ERROR logging when you want to log any error while our bot is online.
+
+### How to use
+
+In the main python file
+
+```python
+import utils.logger
+
+if __name__ == "__main__":
+  # initialise logger with customized configuration
+  utils.logger.setup_logging()
+```
+
+At any sub python file which you want to use logging function, for exmaple: connector.py
+
+```python
+import logging
+
+# at the global scope or any scope you want to include logging function
+# get main logger, you can also put .current_file name after main. By doing this, logger can log your file name as well
+logger = logging.getLogger("main.connector")
+
+# you can pass string or variable
+logger.info("Confirmation")
+
+logger.debug(some_variable)
+
+# please note if you want to also log the traceback information of an error, please use logger.exception()
+logger.error(error_message)
+logger.exception(error_message)
 ```
