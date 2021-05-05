@@ -2,7 +2,7 @@
 #
 # Author: Chuan He
 # Created on 16/04/2021
-# Last edit: 27/04/2021
+# Last edit: 05/05/2021
 
 from db.connector import db_instance
 
@@ -44,13 +44,22 @@ class Discord_channel:
         return rs
 
     # update data
-    def update_channel_name(self, channel_id,channel_name):
+    def update_channel_name(self, channel_id, channel_name):
         self.__data = {
             "channel_id": channel_id,
             "channel_name": channel_name
         }
         self.__sql = ("update discord_channel set channel_name = %(channel_name)s " "where channel_id = %(channel_id)s")
         rs = db_instance.update(self.__sql, self.__data)
+        return rs
+    
+    # delete channel record with given channel id
+    def delete(self, channel_id):
+        self.__data = {
+            "channel_id": channel_id,
+        }
+        self.__sql = ("delete from discord_channel " "where channel_id = %(channel_id)s")
+        rs = db_instance.delete(self.__sql, self.__data)
         return rs
 
 # create channel instance
@@ -107,6 +116,15 @@ class Violated_message:
         self.__sql = ("insert into violated_message ""(message_id, user_id, user_name, channel_id, violation_content, message_content, created_on) " "values (%(message_id)s, %(user_id)s, %(user_name)s, %(channel_id)s, %(violation_content)s, %(message_content)s, %(created_on)s)")
         rs = db_instance.insert(self.__sql, self.__data)
         return rs
+    
+    # delete violated message record with given message id
+    def delete(self, message_id):
+        self.__data = {
+            "message_id": message_id,
+        }
+        self.__sql = ("delete from violated_message " "where message_id = %(message_id)s")
+        rs = db_instance.delete(self.__sql, self.__data)
+        return rs
 
 # create channel instance
 violated_message = Violated_message()
@@ -151,6 +169,15 @@ class Clean_message:
         }
         self.__sql = ("insert into clean_message ""(message_id, user_id, user_name, channel_id, message_content, created_on) " "values (%(message_id)s, %(user_id)s, %(user_name)s, %(channel_id)s, %(message_content)s, %(created_on)s)")
         rs = db_instance.insert(self.__sql, self.__data)
+        return rs
+    
+    # delete clean message record with given message id
+    def delete(self, message_id):
+        self.__data = {
+            "message_id": message_id,
+        }
+        self.__sql = ("delete from clean_message " "where message_id = %(message_id)s")
+        rs = db_instance.delete(self.__sql, self.__data)
         return rs
 
 # create channel instance

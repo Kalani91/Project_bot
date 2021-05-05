@@ -2,12 +2,16 @@
 #
 # Author: Chuan He
 # Created on 30/03/2021
-# Last edit: 27/04/2021
+# Last edit: 5/05/2021
 
+import logging
 from db.db_conf import server
 from db.data import table_desc
 import mysql.connector
 from mysql.connector import errorcode
+
+# get main logger
+logger = logging.getLogger("main.connector")
 
 # Db_helper object contains all the method realted to connecting database and CRUD methods
 class Db_helper:
@@ -32,13 +36,14 @@ class Db_helper:
             )
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-                print("Invalid username or password")
+                logger.error("Invalid username or password")
             elif err.errno == errorcode.ER_BAD_DB_ERROR:
+                logger.error(msg)("Database does not exist")
                 print("Database does not exist")
             else:
-                print(err.msg)
+               logger.exception(err.msg)
         else:
-            print("Database connection successful")
+            logger.info("Successfully connected to the database")
             return True
             
     # method to return connection object
@@ -52,7 +57,7 @@ class Db_helper:
     def close(self):
         if self.__cnx:
             self.__cnx.close()
-            print("Database close successful")
+            logger.info("Successfully closed the database")
 
     # create a cursor object
         # if buffered is true, the cursor fetches all row from the server after an opeartion is executed
@@ -77,15 +82,15 @@ class Db_helper:
         for table_name in TABLES:
             table_schema = TABLES[table_name]
             try:
-                print("Creating table {}: ".format(table_name), end='')
+                logger.info("Creating table %s ...", table_name)
                 self.__cursor.execute(table_schema)
             except mysql.connector.Error as err:
                 if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
-                    print("Table already exists.")
+                    logger.error("Table already exists")
                 else:
-                    print(err.msg)
+                    logger.exception(err.msg)
             else:
-                print("Table creation successful")
+                logger.info("Successfully created table")
         self.__close_cursor()
 
     # method to execute insert, update and delete query
@@ -101,9 +106,10 @@ class Db_helper:
             self.__cursor.execute(sql, params)
             count = self.__cursor.rowcount
             self.__cnx.commit()
+            logger.info("Successfully executed query")
             return count
         except mysql.connector.Error as err:
-            print(err.msg)
+            logger.exception(err.msg)
             self.__cnx.rollback()
         finally:
             self.__close_cursor()
@@ -130,11 +136,13 @@ class Db_helper:
             self.__cursor.execute(sql, params)
             if size:
                 rs = self.__cursor.fetchmany(size)
+                logger.info("Successfully fetched results")
             else:
                 rs = self.__cursor.fetchall()
+                logger.info("Successfully fetched results")
             return rs
         except mysql.connector.Error as err:
-            print(err.msg)
+            logger.exception(err.msg)
         finally:
             self.__close_cursor()
 
