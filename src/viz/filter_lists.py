@@ -21,9 +21,9 @@ anyone anything anyway anywhere are around as at au
 back be became because become becomes becoming been before beforehand behind
 being below beside besides between beyond both bottom but by
 call can cannot ca could com can't
-did do does doing done down due during don't
-each eight either eleven else elsewhere empty enough even ever every
-everyone everything everywhere except en
+did do does doing done down due during don't test reload lol aha ah think good thinks right want wants edu swin going thing things
+each eight either eleven else elsewhere empty enough even ever every i'll look haha xd thanks hmm nice maybe ohh righty sorry use cheers having soz whats
+everyone everything everywhere except en looks idk wont won't able
 few fifteen fifty first five for former formerly forty four from front full
 further
 get give go
@@ -39,7 +39,7 @@ name namely neither never nevertheless next nine no nobody none noone nor not
 nothing now nowhere need na
 of off often on once one only onto or other others otherwise our ours ourselves
 out over own ok oh org
-part per perhaps please put
+part per perhaps please put bad getting
 quite
 rather re really regarding
 same say see seem seemed seeming seems serious several she should show side
