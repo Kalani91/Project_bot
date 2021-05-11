@@ -22,7 +22,7 @@ class OwnerCog(commands.Cog):
 
     # Hidden means it won't show up on the default help.
     @commands.command(name="load", hidden=True)
-    @commands.is_owner()
+    @commands.has_permissions(administrator=True)
     async def load(self, ctx, *, cog: str):
         """Command which Loads a Module.
         Remember to use dot path. e.g: cogs.owner"""
@@ -35,7 +35,7 @@ class OwnerCog(commands.Cog):
             await ctx.send("**`SUCCESS`**")
 
     @commands.command(name="unload", hidden=True)
-    @commands.is_owner()
+    @commands.has_permissions(administrator=True)
     async def unload(self, ctx, *, cog: str):
         """Command which Unloads a Module.
         Remember to use dot path. e.g: cogs.owner"""
@@ -48,7 +48,7 @@ class OwnerCog(commands.Cog):
             await ctx.send("**`SUCCESS`**")
 
     @commands.command(name="reload", hidden=True)
-    @commands.check(check_if_owner_and_dm)
+    @commands.has_permissions(administrator=True)
     async def reload(self, ctx, *, cog: str = None):
         """Command which Reloads a Module.
         Remember to use dot path. e.g: cogs.owner"""
@@ -102,7 +102,7 @@ async def on_error(event, *args, **kwargs):
         if event == "on_message":
             f.write(f"Unhandled message: {args[0]}\n")
         else:
-            raise
+            raise Exception
 
 
 # global error catch when a user tries to run a command that has missing values or that the bot doesn't know
