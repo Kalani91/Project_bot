@@ -9,6 +9,9 @@ load_dotenv()
 # bot token to use with discord
 TOKEN = os.getenv("DISCORD_TOKEN")
 
+intents = discord.Intents.default()
+intents.members = True
+
 
 class OwnerCog(commands.Cog):
     def __init__(self, bot):
@@ -85,7 +88,12 @@ def get_prefix(bot, message):
 
 
 # Setting our prefix for users to interact with out bot
-bot = commands.Bot(command_prefix=get_prefix, description="Bots description")
+bot = commands.Bot(
+    command_prefix=get_prefix,
+    description="Bots description",
+    intents=intents,
+)
+bot.remove_command("help")
 
 # catches error from on_message event and saves to file instead of printing to console
 @bot.event
