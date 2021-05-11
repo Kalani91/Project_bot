@@ -4,7 +4,15 @@ Method 1 produces a ton of garbage.
 Method 2 gives a small amount of garbage.
 The problem is that these methods don't work very well with chat messages, as opposed to an organised text. 
 '''
-
+from __future__ import absolute_import
+from __future__ import division, print_function, unicode_literals
+from sumy.parsers.html import HtmlParser
+from sumy.parsers.plaintext import PlaintextParser
+from sumy.nlp.tokenizers import Tokenizer
+from sumy.summarizers.lsa import LsaSummarizer as Summarizer
+from sumy.nlp.stemmers import Stemmer
+from sumy.utils import get_stop_words
+from sumy.summarizers.lsa import LsaSummarizer
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
@@ -13,6 +21,17 @@ import pandas as pd
 from collections import Counter
 from heapq import nlargest
 from db.connector import db_instance
+
+
+def sumy_nlp(messages):
+    parser = PlaintextParser.from_string(messages, Tokenizer("english"))
+
+    modulesumm_lsa = LsaSummarizer()
+    final_summary = modulesumm_lsa(parser.document, 5)
+
+    #for f_sentence in final_summary:
+        #print(f_sentence)
+    return final_summary
 
 def nlp_method_1(messages):
     docx = nlp(messages)
@@ -127,9 +146,11 @@ all_messages = ""
 for line in txt:
     all_messages = all_messages + line + ". " 
 
-# applying nlp methods
-result1 = nlp_method_1(all_messages)
-result2 = nlp_method_2(all_messages)
 
+
+# applying nlp methods
+#result1 = nlp_method_1(all_messages)
+#result2 = nlp_method_2(all_messages)
+#sumy_nlp(all_messages)
 #print(f'Text analysis with method #1: \n {result1}')
 #print(f'Text analysis with method #2: \n {result2}')
