@@ -4,9 +4,17 @@ from discord.ext import commands
 from better_profanity import profanity
 from db.connector import db_instance
 from db.tables import discord_channel, violated_message, clean_message, flagged_message
+import requests
 
 violation_limit = 3
 ban_limit = 3
+
+url = "https://community-purgomalum.p.rapidapi.com/containsprofanity"
+
+headers = {
+    "x-rapidapi-key": "8ca569a923mshb44f13cd2eb71f1p1442a2jsndefc10f14980",
+    "x-rapidapi-host": "community-purgomalum.p.rapidapi.com",
+}
 
 
 class MessageCog(commands.Cog):
@@ -73,6 +81,11 @@ class MessageCog(commands.Cog):
             pass
         else:  # guild
             check = profanityCheck(message.content)
+            if check != "true":
+                querystring = {"text": f"{message.content}"}
+                check = requests.request(
+                    "GET", url, headers=headers, params=querystring
+                ).text
 
             db_instance.connect()
 
@@ -83,12 +96,12 @@ class MessageCog(commands.Cog):
                     message.channel.name,
                 )
 
-            if check["profanity"] == True:
+            if check == "true":
                 # save to database and delete message
                 await message.delete()
                 # message to channel
                 await message.channel.send(
-                    f'{message.author.mention} {check["message"]}'
+                    f"{message.author.mention} This meessage violates our chat rules"
                 )
 
                 violated_message.insert(
@@ -156,15 +169,9 @@ class MessageCog(commands.Cog):
 def profanityCheck(message):
     isProfain = profanity.contains_profanity(message)
     if isProfain:
-        return {
-            "profanity": isProfain,
-            "message": "This contains bad words.",
-        }
+        return "true"
     else:
-        return {
-            "profanity": isProfain,
-            "message": "This does not contain bad words.",
-        }
+        return "false"
 
 
 def setup(bot):
