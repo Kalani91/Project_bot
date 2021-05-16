@@ -98,18 +98,19 @@ class MessageCog(commands.Cog):
                     message.channel.name,
                 )
 
+                author = message.author
             if check == "true":
                 # save to database and delete message
                 await message.delete()
                 # message to channel
                 await message.channel.send(
-                    f"{message.author.mention} This meessage violates our chat rules"
+                        f"{author.mention} This message violates our server chat rules"
                 )
 
                 violated_message.insert(
                     message.id,
-                    message.author.id,
-                    message.author.name,
+                        author.id,
+                        author.name,
                     message.channel.id,
                     message.content,
                     message.content,
@@ -122,16 +123,14 @@ class MessageCog(commands.Cog):
                     db_instance.close()
 
                 # check if user has reached limit on violations
-                if message.author.guild_permissions.administrator == False:
+                    if author.guild_permissions.administrator == False:
                     if userCount % violation_limit == 0:
                         # check if user has reached threshold for total violations
                         if userCount / violation_limit >= ban_limit:
-                            # ban user from server
-                            await message.author.send(
+                                await author.send(
                                 f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
                             )
-                            await message.author.ban(
-                                reason="Exceeded the maximum allowed violations in account.",
+                                await author.ban(
                                 delete_message_days=7,
                             )
                         else:
@@ -142,24 +141,23 @@ class MessageCog(commands.Cog):
                             await message.author.send("You have been kicked")
                     elif userCount % violation_limit == violation_limit - 1:
                         # warn user that they're on their final warning before being kicked
-                        await message.author.send(
-                            "If you ignore the server rules and continue to post messages that are deemed to violate our terms of use you will be kicked from the server."
+                            await author.send(
                         )
                     else:
                         # send direct message to user
-                        await message.author.send(
+                            await author.send(
                             "Your message violates our terms of use and has been removed"
                         )
                 else:
                     # admin violation
-                    await message.author.send(
+                        await author.send(
                         f"Your message violates our terms of use and has been removed,\nAs you are an administrator in {message.guild.name} your account bypasses the violation checks.\n\nTotal violations: {userCount}"
                     )
             else:
                 clean_message.insert(
                     message.id,
-                    message.author.id,
-                    message.author.name,
+                        author.id,
+                        author.name,
                     message.channel.id,
                     message.content,
                     message.created_at,
