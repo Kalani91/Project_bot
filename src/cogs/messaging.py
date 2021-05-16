@@ -119,6 +119,7 @@ class MessageCog(commands.Cog):
                 userCount = violated_message.count_numbers_of_violation(
                     message.author.id
                 )[0][0]
+                    db_instance.close()
 
                 # check if user has reached limit on violations
                 if message.author.guild_permissions.administrator == False:
@@ -163,7 +164,6 @@ class MessageCog(commands.Cog):
                     message.content,
                     message.created_at,
                 )
-
             db_instance.close()
 
 
