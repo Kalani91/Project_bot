@@ -27,6 +27,8 @@ class MessageCog(commands.Cog):
     # sends a direct message to user that joins the server
     @commands.Cog.listener()
     async def on_member_join(self, member):
+        studentRole = discord.utils.get(member.guild.roles, name="student")
+        await member.edit(roles=[studentRole])
         embed = discord.Embed(
             color=0x4A3D9A,
             title=f"Welcome to {member.guild.name}, {member.name}",
@@ -58,7 +60,7 @@ class MessageCog(commands.Cog):
             inline=False,
         )
         embed.set_footer(
-            text=f"You joined the server on {datetime.now().strftime('%A, %d of %B, %Y at %H:%M:%S')}"
+            text=f"You joined the server on {datetime.now().strftime('%A, %d of %B, %Y at %H:%M:%S')}\n\nYou have been auto assigned as a STUDENT.\nif this is wrong, contact administrator."
         )
         await member.send(embed=embed)
 
