@@ -127,10 +127,12 @@ class MessageCog(commands.Cog):
                     if userCount % violation_limit == 0:
                         # check if user has reached threshold for total violations
                         if userCount / violation_limit >= ban_limit:
+                                # third offence ban user from server
                                 await author.send(
                                 f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
                             )
                                 await author.ban(
+                                    reason="Exceeded the maximum allowed violations for account.",
                                 delete_message_days=7,
                             )
                             elif userCount / violation_limit >= ban_limit - 1:
