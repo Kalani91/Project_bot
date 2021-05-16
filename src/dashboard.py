@@ -34,6 +34,8 @@ def unfiltered_frequency(messages):
         message = remove_emoji(message)
         message_tokens = nltk.tokenize.word_tokenize(message) #getting tokens from all chat messages
         for token in message_tokens:
+            if len(token) < 3:
+                continue
             if token in stop_words: #takes out stop words
                 continue
             if token.isdigit(): #makes sure user ids aren't being collected
@@ -54,6 +56,8 @@ def help_messages_frequency(messages):
             if i in message: #checking if helpword is in the message
                 message_tokens = nltk.tokenize.word_tokenize(message)
                 for token in message_tokens:
+                    if len(token) < 3:
+                        continue
                     if token.isdigit(): #makes sure user ids aren't being collected
                         continue
                     if token in stop_words or token in help_words: #taking out stop words and help keywords
@@ -67,6 +71,7 @@ def help_messages_frequency(messages):
 def make_wordcloud(df):
     # takes in a dataframe
     text = " ". join(word for word in df['message_content'].astype(str)) 
+    
     wc_caption = 'Wordcloud built from analysis of  '+ str(len(text)) + ' words. The size of the word indicates the frequency - so the larger the word, the more frequently it occurs in the data.'
 
     wordcloud = WordCloud(stopwords=stop_words, background_color="white", width=800, height=600, collocations=False).generate(text)
@@ -104,7 +109,7 @@ start_date = st.sidebar.date_input(label="Choose a start date:", value=genesis) 
 end_date = st.sidebar.date_input(label="Choose an end date:") # returns datetime.date
 
 st.sidebar.markdown("## Export whole dashboard")
-st.sidebar.markdown("Dashboard can be saved as a pdf using your browser 'Print' option. For best results, use Google Chrome.") 
+st.sidebar.markdown("The dashboard can be saved as a pdf using your browser 'Print' option. For best results, use Google Chrome.") 
 #export_pdf = st.sidebar.checkbox(label="Tidy for printing")
 st.sidebar.markdown("## Download individual visualisations")
 st.sidebar.markdown("1. Wordcloud can be downloaded by right-clicking and selecting the download option.")
@@ -196,7 +201,7 @@ with container3:
 
 with container4:
     st.header("Experimental summarisation with NLP")
-    st.markdown("The following is a set of sentences that summarise what is being discussed in the selected channel within the selected date range. By default it is turned off due to performance issues. To see it, please tick the box.")
+    st.markdown("The following is a set of sentences that summarise what is being discussed in the selected channel within the selected date range. By default it is turned off to improve performance. To see it, please tick the box.")
     show_nlp = st.checkbox(label="Show experimental NLP")
     if show_nlp: #displays nlp prototypes if toggled on
         from viz.nlp_summary import sumy_nlp
@@ -212,4 +217,4 @@ with container4:
             st.markdown(str(count) + '. ' + str(sentence))
             summary += str(sentence).capitalize() + " "
             count += 1
-        st.markdown("_" + summary + "_")
+        #st.markdown("_" + summary + "_")

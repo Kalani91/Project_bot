@@ -14,22 +14,22 @@ for word in list_helpwords:
 # Generating set of stopwords
 stop_words = set(
     """
-: ? * , ' " ! ... @ \\ / # '' `` ` ~ -- - . 'm ) ( = ; & 's n't > < _ .. 're .... 've nbsp 'd 'll [ ]
+: ? * , ' " ! ... @ \\ / # '' `` ` ~ -- - . 'm ) ( = ; & 's n't > < _ .. 're .... 've nbsp 'd 'll [ ] { } $
 a about above across after afterwards again against all almost alone along
 already also although always am among amongst amount an and another any anyhow
 anyone anything anyway anywhere are around as at au
 back be became because become becomes becoming been before beforehand behind
 being below beside besides between beyond both bottom but by
 call can cannot ca could com can't
-did do does doing done down due during don't test reload lol aha ah think good thinks right want wants edu swin going thing things
+did do does doing done down due during don't test reload lol aha ah think good thinks want wants edu swin going thing things
 each eight either eleven else elsewhere empty enough even ever every i'll look haha xd thanks hmm nice maybe ohh righty sorry use cheers having soz whats
 everyone everything everywhere except en looks idk wont won't able
 few fifteen fifty first five for former formerly forty four from front full
-further
+further b c d e f g h i j k l m n o p q r s t u v w x y z
 get give go
 had has have he hence her here hereafter hereby herein hereupon hers herself
 him himself his how however hundred hello hey hi
-i if in indeed into is it its itself im i'm it's io isn't i've
+i if in indeed into is it its itself im i'm it's io isn't i've ive
 keep know
 last latter latterly least less let like lets
 just joined
@@ -38,7 +38,7 @@ must my myself
 name namely neither never nevertheless next nine no nobody none noone nor not
 nothing now nowhere need na
 of off often on once one only onto or other others otherwise our ours ourselves
-out over own ok oh org
+out over own ok oh org okay ohh
 part per perhaps please put bad getting
 quite
 rather re really regarding
@@ -49,7 +49,7 @@ take ten than that the their they're them themselves then thence there thereafte
 thereby therefore therein thereupon these they third this those though three
 through throughout thru thus to together too top toward towards twelve twenty
 two
-under until up unless upon us used using
+under until up unless upon us used using uh uhh
 various very very via was we well were what whatever when whence whenever where
 whereafter whereas whereby wherein whereupon wherever whether which while www
 whither who whoever whole whom whose why will with within without would
