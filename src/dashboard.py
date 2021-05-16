@@ -9,6 +9,7 @@ from db.connector import db_instance
 import plotly.express as px
 import datetime
 import re
+import dataframe_image as dfi
 #nltk.download('punkt') # needs to be run the first time the code is run on your machine, but can be commented out afterwards
 
 #### TEXT PROCESSING FUNCTIONS ####
@@ -33,6 +34,8 @@ def unfiltered_frequency(messages):
         message = remove_emoji(message)
         message_tokens = nltk.tokenize.word_tokenize(message) #getting tokens from all chat messages
         for token in message_tokens:
+            if len(token) < 3:
+                continue
             if token in stop_words: #takes out stop words
                 continue
             if token.isdigit(): #makes sure user ids aren't being collected
@@ -48,10 +51,13 @@ def help_messages_frequency(messages):
     #getting tokens from help messages
     token_list = []
     for message in messages:
+        message = remove_emoji(message)
         for i in help_words: #going through each word in help_words list
             if i in message: #checking if helpword is in the message
                 message_tokens = nltk.tokenize.word_tokenize(message)
                 for token in message_tokens:
+                    if len(token) < 3:
+                        continue
                     if token.isdigit(): #makes sure user ids aren't being collected
                         continue
                     if token in stop_words or token in help_words: #taking out stop words and help keywords
@@ -62,10 +68,10 @@ def help_messages_frequency(messages):
     result = pd.DataFrame(word_dist.most_common(), columns=['Word', 'Frequency'])
     return result    
 
-@st.cache
 def make_wordcloud(df):
     # takes in a dataframe
     text = " ". join(word for word in df['message_content'].astype(str)) 
+    
     wc_caption = 'Wordcloud built from analysis of  '+ str(len(text)) + ' words. The size of the word indicates the frequency - so the larger the word, the more frequently it occurs in the data.'
 
     wordcloud = WordCloud(stopwords=stop_words, background_color="white", width=800, height=600, collocations=False).generate(text)
@@ -101,8 +107,14 @@ channel_options = st.sidebar.multiselect(label="Which channel(s) would you like 
 genesis = datetime.date(2021, 1, 1) # default value of start_date date picker
 start_date = st.sidebar.date_input(label="Choose a start date:", value=genesis) #returns datetime.date 
 end_date = st.sidebar.date_input(label="Choose an end date:") # returns datetime.date
-st.sidebar.write("More text analysis features are currently being developed. To see a current prototype, tick the box below. WARNING: Impacts page performance.")
-show_nlp = st.sidebar.checkbox(label="Show experimental NLP")
+
+st.sidebar.markdown("## Export whole dashboard")
+st.sidebar.markdown("The dashboard can be saved as a pdf using your browser 'Print' option. For best results, use Google Chrome.") 
+#export_pdf = st.sidebar.checkbox(label="Tidy for printing")
+st.sidebar.markdown("## Download individual visualisations")
+st.sidebar.markdown("1. Wordcloud can be downloaded by right-clicking and selecting the download option.")
+st.sidebar.markdown("2. Graphs can be downloaded by hovering over them and clicking the camera icon that appears in the top right corner.")
+st.sidebar.markdown("3. To download the keyword frequency tables, select which one to download below and follow the instructions.")
 
 ## dataframe queries and filtering
 df_channel = raw_df['channel_name'].isin(channel_options)
@@ -140,16 +152,31 @@ with container1:
 with container2:
     st.header("Top Keywords")
     col41, col42 = st.beta_columns(2)
-    amount = st.slider(min_value=5, max_value=30, value=10, step=5, label="Select number of words to display.")
+    amount = st.slider(min_value=10, max_value=50, value=10, step=5, label="Select number of words to display.")
     with col41:
         st.subheader("All messages")
-        st.write(unfiltered_msgs.head(amount))
+        dfi.export(unfiltered_msgs.head(amount), 'df1.png') 
+    
+        st.dataframe(unfiltered_msgs.head(amount), height=600)
         st.write("The top keywords calculated from all messages.")
+
+        dl_df1 = st.sidebar.checkbox(label="All messages keywords", key="download-allmsgs")
+        if dl_df1:
+            st.sidebar.write("Please right click and save the following image. Untick the box once finished.")
+            st.sidebar.image('df1.png')
+ 
     with col42:
         st.subheader("Help messages")
-        st.write(help_msgs.head(amount))
+        dfi.export(help_msgs.head(amount), 'df2.png') 
+
+        st.dataframe(help_msgs.head(amount), height=600)
         st.write("The top keywords calculated from messages categorised as requests for help.")
-    #No point putting a percentages column because there are so many words mentioned only once that any percentage would be diluted.
+
+        dl_df2 = st.sidebar.checkbox(label="Help messages keywords", key="download-helpmsgs")
+        if dl_df2:
+            st.sidebar.write("Please right click and save the following image. Untick the box once finished.")
+            st.sidebar.image('df2.png')
+
     st.markdown("""---""")
 
 with container3:
@@ -170,22 +197,24 @@ with container3:
     top10 = current_df['user_name'].value_counts(normalize="true")*100
     fig3 = px.bar(top10.head(10), title='Top 10 Posters (%)', labels={'index': 'Username', 'value': 'Contributions as %'})
     st.plotly_chart(fig3)
-    st.write("")
-    st.write("------------------------------------")
+    st.write("--------")
 
 with container4:
+    st.header("Experimental summarisation with NLP")
+    st.markdown("The following is a set of sentences that summarise what is being discussed in the selected channel within the selected date range. By default it is turned off to improve performance. To see it, please tick the box.")
+    show_nlp = st.checkbox(label="Show experimental NLP")
     if show_nlp: #displays nlp prototypes if toggled on
-        from viz.nlp_summary import nlp_method_1, nlp_method_2
+        from viz.nlp_summary import sumy_nlp
         all_messages = ""
         for line in chat_messages:
             all_messages = all_messages + line + ". " 
 
-        result1 = nlp_method_1(all_messages)
-        result2 = nlp_method_2(all_messages)
-
-        st.header("Experimental NLP")
-        st.markdown("The following is a summary generated by an extractive NLP algorithm (WORK IN PROGRESS).")
-        st.write("Result 1:")
-        st.markdown(result1)
-        st.write("Result 2:")
-        st.markdown(result2)
+        nlp_result = sumy_nlp(all_messages)
+        
+        count = 1
+        summary = ""
+        for sentence in nlp_result:
+            st.markdown(str(count) + '. ' + str(sentence))
+            summary += str(sentence).capitalize() + " "
+            count += 1
+        #st.markdown("_" + summary + "_")
