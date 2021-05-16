@@ -133,13 +133,23 @@ class MessageCog(commands.Cog):
                                 await author.ban(
                                 delete_message_days=7,
                             )
-                        else:
-                            # kick/mute user
-                            await message.author.kick(
+                            elif userCount / violation_limit >= ban_limit - 1:
+                                # second offence kick user
+                                await author.send(
+                                    "Due to multiple violoations you have been kicked.\nContact a staff member to request an invite back to the server."
+                                )
+                                await author.kick(
                                 reason="Had to many violations and have been kicked."
                             )
-                            await message.author.send("You have been kicked")
-                    elif userCount % violation_limit == violation_limit - 1:
+                            else:
+                                # first offence mute user
+                                muteRole = discord.utils.get(
+                                    message.guild.roles, name="muted"
+                                )
+                                await author.edit(roles=[muteRole])
+                                await author.send(
+                                    "Due to multiple violoations you have been muted.\nContact a staff member to enable your chat privileges."
+                                )
                         # warn user that they're on their final warning before being kicked
                             await author.send(
                         )
