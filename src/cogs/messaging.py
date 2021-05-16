@@ -70,79 +70,80 @@ class MessageCog(commands.Cog):
         if message.author == self.bot.user:
             return
 
-        # prints all messages to console
-        print(
-            'In channel "{0.guild}.{0.channel}" - Message from {0.author.name}: {0.content}'.format(
-                message
-            )
-        )
-
-        if isinstance(message.channel, discord.DMChannel):  # dm
-            pass
-        elif not message.guild:  # group dm
-            pass
-        else:  # guild
-            check = profanityCheck(message.content)
-            if check != "true":
-                querystring = {"text": f"{message.content}"}
-                check = requests.request(
-                    "GET", url, headers=headers, params=querystring
-                ).text
-
-            db_instance.connect()
-
-            if (message.channel.id, message.channel.name) not in self.channel_list:
-                self.channel_list.append((message.channel.id, message.channel.name))
-                discord_channel.insert(
-                    message.channel.id,
-                    message.channel.name,
+        if message.content is not "":
+            # prints all messages to console
+            print(
+                'In channel "{0.guild}.{0.channel}" - Message from {0.author.name}: {0.content}'.format(
+                    message
                 )
+            )
+
+            if isinstance(message.channel, discord.DMChannel):  # dm
+                pass
+            elif not message.guild:  # group dm
+                pass
+            else:  # guild
+                check = profanityCheck(message.content)
+                if check != "true":
+                    querystring = {"text": f"{message.content}"}
+                    check = requests.request(
+                        "GET", url, headers=headers, params=querystring
+                    ).text
+
+                db_instance.connect()
+
+                if (message.channel.id, message.channel.name) not in self.channel_list:
+                    self.channel_list.append((message.channel.id, message.channel.name))
+                    discord_channel.insert(
+                        message.channel.id,
+                        message.channel.name,
+                    )
 
                 author = message.author
-            if check == "true":
-                # save to database and delete message
-                await message.delete()
-                # message to channel
-                await message.channel.send(
+                if check == "true":
+                    # save to database and delete message
+                    await message.delete()
+                    # message to channel
+                    await message.channel.send(
                         f"{author.mention} This message violates our server chat rules"
-                )
+                    )
 
-                violated_message.insert(
-                    message.id,
+                    violated_message.insert(
+                        message.id,
                         author.id,
                         author.name,
-                    message.channel.id,
-                    message.content,
-                    message.content,
-                    message.created_at,
-                )
+                        message.channel.id,
+                        message.content,
+                        message.content,
+                        message.created_at,
+                    )
 
-                userCount = violated_message.count_numbers_of_violation(
-                    message.author.id
-                )[0][0]
+                    userCount = violated_message.count_numbers_of_violation(
+                        message.author.id
+                    )[0][0]
                     db_instance.close()
 
-                # check if user has reached limit on violations
+                    # check if user has reached limit on violations
                     if author.guild_permissions.administrator == False:
-                    if userCount % violation_limit == 0:
-                        # check if user has reached threshold for total violations
-                        if userCount / violation_limit >= ban_limit:
+                        if userCount % violation_limit == 0:
+                            # check if user has reached threshold for total violations
+                            if userCount / violation_limit >= ban_limit:
                                 # third offence ban user from server
                                 await author.send(
-                                f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
-                            )
+                                    f"You have ignored the multiple warnings and have been banned from {message.guild.name}"
+                                )
                                 await author.ban(
                                     reason="Exceeded the maximum allowed violations for account.",
-                                delete_message_days=7,
-                            )
+                                    delete_message_days=7,
+                                )
                             elif userCount / violation_limit >= ban_limit - 1:
                                 # second offence kick user
                                 await author.send(
                                     "Due to multiple violoations you have been kicked.\nContact a staff member to request an invite back to the server."
                                 )
                                 await author.kick(
-                                reason="Had to many violations and have been kicked."
-                            )
+                                    reason="Had to many violations and have been kicked."
+                                )
                             else:
                                 # first offence mute user
                                 muteRole = discord.utils.get(
@@ -156,7 +157,7 @@ class MessageCog(commands.Cog):
                             userCount / violation_limit == 1
                             and userCount % violation_limit == violation_limit - 1
                         ):
-                        # warn user that they're on their final warning before being kicked
+                            # warn user that they're on their final warning before being kicked
                             await author.send(
                                 "If you ignore the server chat rules and continue to post messages that are deemed to violate our terms of use you will be kicked from the server."
                             )
@@ -167,27 +168,27 @@ class MessageCog(commands.Cog):
                             # warn user that they're on their final warning before being muted
                             await author.send(
                                 "If you ignore the server chat rules and continue to post messages that are deemed to violate our terms of use you will lose your chat privileges."
-                        )
-                    else:
-                        # send direct message to user
+                            )
+                        else:
+                            # send direct message to user
                             await author.send(
-                            "Your message violates our terms of use and has been removed"
+                                "Your message violates our terms of use and has been removed"
+                            )
+                    else:
+                        # admin violation
+                        await author.send(
+                            f"Your message violates our terms of use and has been removed,\nAs you are an administrator in {message.guild.name} your account bypasses the violation checks.\n\nTotal violations: {userCount}"
                         )
                 else:
-                    # admin violation
-                        await author.send(
-                        f"Your message violates our terms of use and has been removed,\nAs you are an administrator in {message.guild.name} your account bypasses the violation checks.\n\nTotal violations: {userCount}"
-                    )
-            else:
-                clean_message.insert(
-                    message.id,
+                    clean_message.insert(
+                        message.id,
                         author.id,
                         author.name,
-                    message.channel.id,
-                    message.content,
-                    message.created_at,
-                )
-            db_instance.close()
+                        message.channel.id,
+                        message.content,
+                        message.created_at,
+                    )
+                    db_instance.close()
 
 
 # checking message for profanity
