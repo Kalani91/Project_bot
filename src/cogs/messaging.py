@@ -123,8 +123,10 @@ class MessageCog(commands.Cog):
                     )[0][0]
                     db_instance.close()
 
-                    # check if user has reached limit on violations
-                    if author.guild_permissions.administrator == False:
+                    # make sure user has role student
+                    studentRole = discord.utils.get(message.guild.roles, name="student")
+                    if studentRole in author.roles:
+                        # check if user has reached limit on violations
                         if userCount % violation_limit == 0:
                             # check if user has reached threshold for total violations
                             if userCount / violation_limit >= ban_limit:
