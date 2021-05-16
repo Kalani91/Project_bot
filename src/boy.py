@@ -115,6 +115,42 @@ async def on_command_error(ctx, error):
 @bot.event
 async def on_ready():
     print("Logged on as {0}!".format(bot.user))
+    async for guild in bot.fetch_guilds():
+        guild = bot.get_guild(guild.id)
+
+        studentRole = discord.utils.get(guild.roles, name="student")
+        if studentRole is None:
+            await guild.create_role(
+                name="student",
+                colour=discord.Colour(0x45C400),
+                permissions=discord.Permissions(
+                    add_reactions=True,
+                    attach_files=True,
+                    change_nickname=True,
+                    connect=True,
+                    deafen_members=True,
+                    mute_members=True,
+                    read_messages=True,
+                    read_message_history=True,
+                    send_messages=True,
+                    send_tts_messages=True,
+                    speak=True,
+                    stream=True,
+                ),
+                hoist=True,
+                reason="Role created so that it can be assigned to a user when they join",
+            )
+
+        muteRole = discord.utils.get(guild.roles, name="muted")
+        if muteRole is None:
+            await guild.create_role(
+                name="muted",
+                # colour=discord.Colour(0xFF0000),
+                permissions=discord.Permissions(
+                    read_messages=True,
+                ),
+                reason="Role created so that it can be assigned to a user when they violate chat rules",
+            )
 
 
 initial_extensions = [
