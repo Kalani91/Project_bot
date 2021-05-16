@@ -70,7 +70,7 @@ class MessageCog(commands.Cog):
         if message.author == self.bot.user:
             return
 
-        if message.content is not "":
+        if message.content != "":
             # prints all messages to console
             print(
                 'In channel "{0.guild}.{0.channel}" - Message from {0.author.name}: {0.content}'.format(
