@@ -150,8 +150,21 @@ class MessageCog(commands.Cog):
                                 await author.send(
                                     "Due to multiple violoations you have been muted.\nContact a staff member to enable your chat privileges."
                                 )
+                        elif (
+                            userCount / violation_limit == 1
+                            and userCount % violation_limit == violation_limit - 1
+                        ):
                         # warn user that they're on their final warning before being kicked
                             await author.send(
+                                "If you ignore the server chat rules and continue to post messages that are deemed to violate our terms of use you will be kicked from the server."
+                            )
+                        elif (
+                            userCount / violation_limit == 0
+                            and userCount % violation_limit != violation_limit - 1
+                        ):
+                            # warn user that they're on their final warning before being muted
+                            await author.send(
+                                "If you ignore the server chat rules and continue to post messages that are deemed to violate our terms of use you will lose your chat privileges."
                         )
                     else:
                         # send direct message to user
