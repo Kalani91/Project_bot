@@ -38,7 +38,7 @@ class Db_helper:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 logger.error("Invalid username or password")
             elif err.errno == errorcode.ER_BAD_DB_ERROR:
-                logger.error(msg)("Database does not exist")
+                logger.error("Database does not exist")
                 print("Database does not exist")
             else:
                logger.exception(err.msg)
