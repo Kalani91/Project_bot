@@ -4,6 +4,7 @@
 # Created on 16/04/2021
 # Last edit: 05/05/2021
 
+import re
 from db.connector import db_instance
 
 # Channel object contains all the data manipulation methods realted to discrod_channel table
@@ -45,6 +46,7 @@ class Discord_channel:
 
     # update data
     def update_channel_name(self, channel_id, channel_name):
+        if (channel_id == ""): return
         self.__data = {
             "channel_id": channel_id,
             "channel_name": channel_name
@@ -55,6 +57,7 @@ class Discord_channel:
     
     # delete channel record with given channel id
     def delete(self, channel_id):
+        if (channel_id == ""): return
         self.__data = {
             "channel_id": channel_id,
         }
@@ -119,6 +122,7 @@ class Violated_message:
     
     # delete violated message record with given message id
     def delete(self, message_id):
+        if (message_id == ""): return
         self.__data = {
             "message_id": message_id,
         }
@@ -173,6 +177,7 @@ class Clean_message:
     
     # delete clean message record with given message id
     def delete(self, message_id):
+        if (message_id == ""): return
         self.__data = {
             "message_id": message_id,
         }
@@ -231,12 +236,13 @@ class Flagged_message:
         rs = db_instance.insert(self.__sql, self.__data)
         return rs
 
-    # delete all flaged message for a particular user with given user id
-    def delete(self, user_id):
+    # delete all flaged message for a particular user with given message id
+    def delete(self, message_id):
+        if (message_id == ""): return
         self.__data = {
-            "user_id": user_id,
+            "message_id": message_id,
         }
-        self.__sql = ("delete from flagged_message " "where user_id = %(user_id)s")
+        self.__sql = ("delete from flagged_message " "where message_id = %(message_id)s")
         rs = db_instance.delete(self.__sql, self.__data)
         return rs
 

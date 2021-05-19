@@ -10,7 +10,7 @@
 # 2. enable insert function to specific table
 # 3. change numbers of record when you call the init_tables()
 
-import sys 
+import sys
 sys.path.append("..") 
 import json
 from db.connector import db_instance
@@ -18,9 +18,6 @@ from db.tables import discord_channel, violated_message, clean_message, flagged_
 
 # Size is the numbers of record you want to insert to each message table
 def init_tables(size):
-    # connect to database
-    db_instance.connect()
-
     # create discord_channel table
     # create violated_message table
     # create clean_message table
@@ -63,9 +60,7 @@ def init_tables(size):
                     # flagged_message.insert(message_id, user_id, created_on)
 
                     count += 1
-    
-    # close database connection
-    db_instance.close()
+
 
 if __name__ == "__main__":
     db_instance.connect()
