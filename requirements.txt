@@ -11,6 +11,7 @@ python-dotenv==0.17.1
 better-profanity==0.7.0
 PyYAML==5.4.1
 dataframe-image
+sumy
 asyncio
 setuptools
 wheel
