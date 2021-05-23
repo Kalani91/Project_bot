@@ -103,6 +103,14 @@ channel_listing = ['All']
 for x in raw_df['channel_name'].unique():
     channel_listing.append(x)
 
+# removes test channels
+try:
+    channel_listing.remove('bots')
+    channel_listing.remove('irc')
+except:
+    print("Channel doesn't exist, can't delete")
+
+print(channel_listing)
 channel_options = st.sidebar.multiselect(label="Which channel(s) would you like to look at?", options=channel_listing, default="All", help="If nothing selected, results will be based on entire server data") # returns a list
 genesis = datetime.date(2021, 1, 1) # default value of start_date date picker
 start_date = st.sidebar.date_input(label="Choose a start date:", value=genesis) #returns datetime.date 
@@ -200,9 +208,9 @@ with container3:
     st.write("--------")
 
 with container4:
-    st.header("Experimental summarisation with NLP")
+    st.header("NLP Summarisation")
     st.markdown("The following is a set of sentences that summarise what is being discussed in the selected channel within the selected date range. By default it is turned off to improve performance. To see it, please tick the box.")
-    show_nlp = st.checkbox(label="Show experimental NLP")
+    show_nlp = st.checkbox(label="Show NLP summarisation")
     if show_nlp: #displays nlp prototypes if toggled on
         from viz.nlp_summary import sumy_nlp
         all_messages = ""
