@@ -110,7 +110,6 @@ try:
 except:
     print("Channel doesn't exist, can't delete")
 
-print(channel_listing)
 channel_options = st.sidebar.multiselect(label="Which channel(s) would you like to look at?", options=channel_listing, default="All", help="If nothing selected, results will be based on entire server data") # returns a list
 genesis = datetime.date(2021, 1, 1) # default value of start_date date picker
 start_date = st.sidebar.date_input(label="Choose a start date:", value=genesis) #returns datetime.date 
