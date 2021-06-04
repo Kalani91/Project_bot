@@ -11,6 +11,7 @@ def sumy_nlp(messages):
     parser = PlaintextParser.from_string(messages, Tokenizer("english"))
 
     modulesumm_lsa = LsaSummarizer()
+    # Summarize the document with 5 sentences
     final_summary = modulesumm_lsa(parser.document, 5)
 
     #for f_sentence in final_summary:
